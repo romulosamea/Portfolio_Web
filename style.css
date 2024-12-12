@@ -1,0 +1,290 @@
+body {
+    font-family: montserrat, sans-serif;
+    background-color:black;
+}
+
+p{
+    color: white;
+      z-index: 1000;
+}
+
+.animation-text span::after{
+    animation:cursor .10s infinite;
+    animation: words  20s infinite;
+    color: green;
+}
+
+h1.animation-text span::before{ 
+    font-size: 50px;
+    padding-left: 20px;
+    margin-left: 15px;
+    border-left: 4px solid green;
+    right: -8px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    animation:cursor .8s infinite typing 20s steps(12 infinite);
+}
+
+
+h1.animation-text span::after{
+    content: "Graphic Designer";
+    animation:cursor .8s infinite;
+    animation: words  20s infinite;
+    color: rgb(182, 171, 15);
+    font-size: 50px;
+    margin-left: 15px;
+    padding-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-left: 4px solid maroon;
+    right: -8px;
+    overflow: hidden;
+    animation:cursor .8s infinite typing 20s steps(12 infinite);
+    animation: words  10s infinite;
+}
+
+
+@keyframes cursor{
+    to {
+        border-left: 3px solid rgb(144, 134, 134);
+    }
+}
+
+@keyframes  words {
+    0%,20%{
+     content: "Web Developer";
+     color: maroon;
+    }
+    40%, 50%{
+         content: "Animator";
+         color: green;
+    }
+}
+
+
+@keyframes typing{
+    10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%{
+        width: 0;
+    }
+}
+
+
+
+h2{
+    color: aliceblue;
+    padding-left: 10px;
+}
+ 
+h3{
+    color: maroon;
+    cursor: pointer;
+    font-size:19px;
+}
+
+h3 span{
+    color: green;
+}
+
+h4{
+    color: aqua;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+h5{
+   color: white;
+   font-size: 20px;
+   padding-left: 100px;
+}
+
+h6{
+    color: white;
+    font-size: 20px;
+    padding-left: 115px;
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+   color: aqua;
+}
+
+.about{
+    font-size: 18px;
+    padding-left: 120px;
+    margin-right:370px;
+    justify-content: right;
+    text-align: justify;
+    color: #2b7fde;
+    line-height: 20px;
+}
+
+
+#btn{
+    background-color: rgb(13, 64, 174);
+    color: white;
+    border-radius: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+#btn:hover{
+    background-color: maroon;
+}
+
+
+#btn-script{
+    display: inline-block;
+}
+
+
+.info1{
+    float: right;
+    padding-right: 700px;
+}
+
+.info2{
+    display: inline;
+    float: left;
+}
+
+.words{
+    color: white;
+    font-size: 20px;
+}
+
+
+details{
+    color: white;
+    font-size: 15px;
+    padding-left: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+details:hover{
+   color: rgb(212, 127, 9);
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e2d2d;
+    text-align: center;
+}
+
+ol span{
+    color: green;
+}
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    height: 120vh;
+    background-image: linear-gradient(rgba(15, 6, 112, 0.5), rgba(43, 9, 9, 0.5)), url("logo\ instiiiiii.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-left: 43%;/*text*/
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p:hover{
+    color: yellow;
+}
+
+img{
+    border-radius: 500px;
+    border: 10px solid maroon;
+    height:287px;
+    width: 287px;  
+    margin-left: 40px;
+}
+
+#exploreBtn{
+    align-items: left;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    position: right;
+}
+
+.hero-content button:hover {
+    background-color: maroon;
+}
+
+/* Section Styles */
+section {
+    text-align: left;
+}
+
+.section-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media (max-width: 100px){
+    img{
+        width: 100px;
+        height: 150px;
+    }
+}

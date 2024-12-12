@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+         <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Skills</title>
+              <link rel="icon" type="image/x-icon" href="sam222.png">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         </head>
+         <body>
+            <style>
+                body{
+                    background-color: black;
+                }
+
+
+                a{
+                   text-decoration: none;
+                   color: white;
+                   font-family: montserrat, sans-serif;
+                   font-size: 19px;
+                  }
+    
+                a:hover{
+                   color: yellow;      
+                } 
+
+                h3{
+                  color: maroon;
+                  cursor: pointer;
+                  font-size:19px;
+                  font-family: montserrat, sans-serif;
+                }
+
+                h3 span{
+                 color: green;
+                 font-size: 19px;
+                 font-family: montserrat, sans-serif;
+                }
+
+                nav {    
+                  top: 0;
+                  width: 100%;
+                  background-color: #2e2d2d;
+                  text-align: center;
+                  margin-right: 90%;
+                  height: 100px;
+                  position: fixed;
+                  z-index: 1000;
+                }
+
+                nav ul li {
+                  display: inline;
+                  margin: 0 20px;
+                }
+
+               .hero {
+                  height: 1880px;
+                  width: 100%;
+                  background-image: linear-gradient(rgba(15, 6, 112, 0.5), rgba(43, 9, 9, 0.5)), url(syntax.png);
+                  background-size: cover;
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                  justify-content: center;
+                  color: white;
+                  overflow: hidden;
+                }
+
+
+                .row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-left: 29px;
+    margin-bottom: 20px;
+}
+
+.skill-items-1 {
+    margin: 15px 0;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.skills-process {
+    background-color: rgb(8, 160, 38);  /* Default color */
+    height: 20px;
+    width: 0%; /* Initial width is 0% */
+    max-width: 300px;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 25%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 0.5s ease-out, background-color 0.5s ease-out;
+}
+
+.skills-percentage-inside {
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    margin-right: 5px;
+    width: 100%;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+   /*for the ajustment of the image*/
+h1 {
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-size: 20px;
+    padding-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+    /*image all h1*/
+h1 img {
+    width: 59px;
+    height: 59px;
+    display: inline;
+    vertical-align: middle;
+    margin-top: 1px;
+    padding-top: 1px;
+    margin-left: 20px; /* Add some space between text and image */
+}
+
+.Languge-form {
+    text-align: center;
+    color: rgb(11, 175, 46);
+    font-family: montserrat, sans-serif;
+    font-size: 30px;
+}
+
+.skills-process {
+    background-color: rgb(8, 160, 38);  /* Default color */
+    height: 29px;
+}
+
+.skills-process:hover {
+    background-color: #FF5722; /* Color change on hover */
+}
+
+@media (max-width: 100px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .skills-process {
+        margin-left: 0; /* Remove left margin for smaller screens */
+    }
+
+    h1 {
+        padding-left: 0;
+    }
+}
+
+            #ouput{
+                 color: aliceblue;
+                 font-family: montserrat, sans-serif;
+                 margin-left: 7.9%;
+               }
+
+               #printMessage{
+                 padding-left: 2%;
+               }
+
+               button{
+                 color: rgb(255, 255, 255);
+                 background-color: maroon;
+                 cursor: pointer;
+                 margin-left: 5%;
+                 border-radius:20px;
+                 height: 50px;
+                 width: 200px;
+                 font-size: 20px;
+               }
+
+               button:hover{
+                background-color: green;
+               }
+            </style>
+            <nav>
+                <ul>
+                    <h3 title="Hi, I'm Romulo Garcia and I'm heading to Web Development and currently a College Student"><span>R</span>G</h3>
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Back to Home</a></li>
+                    <li><a href="About Me.html"><i class="fa fa-user" aria-hidden="true"></i> Back to About Me</a></li>
+                </ul> 
+            </nav>
+            <section class="hero">                
+                <div class="hero-content">
+                <div class="row">
+                    <div class="Languge-form">Percentage of the Non-Languages ang Languages</div>
+                    <div class="skill-items-1">
+                        <h1>H T M L <img src="HTML5_badge.png" class="skill-icon" alt="HTML"></h1>
+                        <div class="skills-process" id="html-bar" data-percentage="95"> 
+                            <span class="skills-percentage-inside" id="html-percentage">95%</span> 
+                        </div>
+                    </div>
+                    <div class="skill-items-1">
+                        <h1>Cascading Style Sheet <img src="logo-css-3-2048.png" class="skill-icon" alt="CSS"></h1>
+                        <div class="skills-process" id="CSS-bar" data-percentage="75"> 
+                            <span class="skills-percentage-inside" id="CSS-percentage">75%</span> 
+                        </div>
+                    </div>
+                    <div class="skill-items-1">
+                        <h1>C++ <img src="Cpp.png" class="skill-icon" alt="C++"></h1>
+                        <div class="skills-process" id="cpp-bar" data-percentage="15"> 
+                            <span class="skills-percentage-inside" id="cpp-percentage">25%</span> 
+                        </div>
+                    </div>
+                    <div class="skill-items-1">
+                        <h1>J a v a S c r i p t <img src="javascript-logo-hq-png-1.png" class="skill-icon" alt="JavaScript"></h1>
+                        <div class="skills-process" id="js-bar" data-percentage="80"> 
+                            <span class="skills-percentage-inside" id="js-percentage">80%</span> 
+                        </div>
+                    </div>
+                    <div class="skill-items-1">
+                        <h1>P H P <img src="php_PNG43.png" class="skill-icon" alt="PHP"></h1>
+                        <div class="skills-process" id="php-bar" data-percentage="10"> 
+                            <span class="skills-percentage-inside" id="php-percentage">10%</span> 
+                        </div>
+                    </div>
+                </div>
+                <hr><br><br>
+                <div class="Languge-form">Percentage of Editing</div>
+                <div class="row">
+                    <div class="skill-items-1">
+                        <h1>Adobe Illustrator <img src="adobe-illustrator-circle-icon-for-web-design-free-png.png" class="skill-icon" alt="Adobe Illustrator"></h1>
+                        <div class="skills-process" id="ai-bar" data-percentage="50">
+                            <span class="skills-percentage-inside" id="ai-percentage">50%</span>
+                        </div>
+                    </div>
+                    <div class="skill-items-1">
+                        <h1>Adobe Photoshop <img src="adobe-photoshop-logo-0.png" class="skill-icon" alt="Adobe Photoshop"></h1>
+                        <div class="skills-process" id="ps-bar" data-percentage="27">
+                            <span class="skills-percentage-inside" id="ps-percentage">27%</span>
+                        </div>
+                    </div>
+                    <div class="skill-items-1">
+                        <h1>Adobe After Effects <img src="after-effects_318-452406.avif" class="skill-icon" alt="Adobe After Effects"></h1>
+                        <div class="skills-process" id="ae-bar" data-percentage="15">
+                            <span class="skills-percentage-inside" id="ae-percentage">15%</span>
+                        </div>
+                    </div>
+                    <div class="skill-items-1">
+                        <h1>Sketch Up <img src="sketchup2.png" class="skill-icon" alt="Sketch Up"></h1>
+                        <div class="skills-process" id="SketchUp-bar" data-percentage="100">
+                            <span class="skills-percentage-inside" id="SketchUp-percentage">100%</span>
+                        </div>
+                    </div>
+                </div>
+        <hr>
+        <div id="ouput">Hired Me Now!!</div>
+            <button onclick="printMessage()">Click Me Now</button>
+        </section>
+      </body>
+      <script>
+        document.oncontextmenu = () => {
+            alert("I don't have to be the one who completes you.");
+            alert("I know.");
+            alert("I don't want to hold your hand.");
+            alert("To make you feel good about me.");
+            alert("You've been okay all of this time");
+            return false;
+        };
+
+        document.onkeydown = e => {
+            if (e.key == "F12") {
+                alert("We have all the time in the world");
+                alert("Let's all 'Skip the Drama'");
+                alert("Believe in what is real");
+                return false;
+            }
+        };
+    </script>
+       <script>
+        document.addEventListener("DOMContentLoaded", function (h1) {
+         const skillBars = document.querySelectorAll('.skills-process');
+     
+         function setSkillBarWidth(bar) {
+             const percentage = bar.getAttribute('data-percentage');
+             const span = bar.querySelector('.skills-percentage-inside');
+             span.textContent = `${percentage}%`; 
+             bar.style.width = `${percentage}%`; 
+         }
+     
+         
+         skillBars.forEach(setSkillBarWidth);
+     
+        
+         skillBars.forEach(bar => {
+             const percentage = bar.getAttribute('data-percentage');
+             const percentageSpan = bar.querySelector('.skills-percentage-inside');
+             
+            
+             bar.addEventListener('mouseenter', function (h1) {
+                 const widthPercentage = `${percentage}%`;
+                 bar.style.transition = 'width 0.5s ease-out';
+                 bar.style.width = widthPercentage; 
+             });
+     
+             
+             percentageSpan.addEventListener('mouseenter', function (h1) {
+                 const widthPercentage = `${percentage}%`;
+                 bar.style.transition = 'width 0.5s ease-out';
+                 bar.style.width = widthPercentage; 
+             });
+     
+            
+             bar.addEventListener('mouseleave', function (h1) {
+                 const widthPercentage = `${percentage}%`;
+                 bar.style.transition = 'width 0.5s ease-out'; 
+                 bar.style.width = widthPercentage; 
+             });
+     
+            
+             percentageSpan.addEventListener('mouseleave', function (h1) {
+                 const widthPercentage = `${percentage}%`;
+                 bar.style.transition = 'width 0.5s ease-out';
+                 bar.style.width = widthPercentage; 
+             });
+         });
+     });
+            </script>
+             <script>
+                function printMessage() {
+                document.getElementById('ouput').innerHTML = "Thank You, I'll be there Soon";
+                    alert("You Need to Log in In Facebook");
+                    window.location.href = "https://www.facebook.com/"; 
+              } 
+             </script>
+             <script>
+                  document.oncontextmenu = () => {
+                      alert("Let's all 'Skip the Drama'.")
+                      alert("Believe in what is.... real.")
+                      return false
+              }
+    
+                  document.onkeydown = e => {
+                      if(e.key == "F12") {
+                          alert(".")
+                          return false
+                 }
+              }
+           </script>
+</html>

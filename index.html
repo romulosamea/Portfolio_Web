@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="sam222.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <h3 title="Hi, I'm Romulo Garcia and I'm heading to Web Development and currently a College Student"><span>R</span>G</h3>
+            <li><a href="About Me.html"><i class="fa fa-user" aria-hidden="true"></i>  About Me</a></li>
+            <li><a href="Services.html"><i class="fa fa-server" aria-hidden="true"></i>  Services</a></li>
+            <li><a href="Skills.html"><i class="fa fa-cogs" aria-hidden="true"></i>  Skills</a></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">                
+        <div class="hero-content">
+            <p><marquee direction="left">Hello, Discover My Journey, Skills, and Projects</marquee></p>
+            <button id="exploreBtn" title="Just click this button and you will direct to the random pages, but it inside the portfolio">Explore More</button>
+        </div>
+     </section>
+    <div class="profile-container"></div>
+        <div class="profile-image-container">
+            <img src="IMG_20240826_184109.jpg" alt="Profile Picture" class="profile-image">
+        </div>
+        <h6>Romulo Garcia</h6>
+        <h1 class="animation-text">
+            <span title="The different colors symbolize 'different skills', but the logic is the color 'Green' represents  'Code' while the red or maroon symbolize errors in the code while the yellow is the optional.">2001</span></h1> 
+          <div class="about">
+            <summary>Web development is my passion to explore more about the technology, and in the coding industry as long as in the field of Information Technology, where it can lead to me to discover the things while I'm on going into the success to finish where I am now. Welcome to my simple portfolio.</summary>
+         </div>
+    <hr>
+    <br>
+    <details>
+        <ol><span>FullName:</span> Romulo C, Garcia Jr</ol>
+        <ol><span>Birthday:</span> December</ol>
+        <ol><span>Age:</span> 23</ol>
+        <ol><span>Gender:</span> Male</ol>
+    </details>
+        <hr>
+    <div class="info1">
+        <h2>Contacts</h2>
+            <ul>
+                <li><h4 title="You can contact me anytime if you feel that I'm acceptable in your company, I will be there anytime when You call Me"><i class="fa fa-phone-square" aria-hidden="true"></i>  :0994519181</h4></li>
+                <li><h4 title="You can also send to my email for more infomation."><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:hege@gmail.com">  :riokairiyu@gmail.com</a></h4></li>
+                <li><h4 title="You can contact me also in my facebook account, wherever you want, anytime anywhere."><i class="fa fa-facebook" aria-hidden="true"></i>  Facebook:</h4></li>
+                <li><h4><i class="fa fa-instagram" aria-hidden="true"></i>  Insagram:</h4></li>
+            </ul>
+    </div>
+    <div class="info2"></div>
+        <h2>Place</h2>
+            <ul>
+                <li><h4 title="I'm currently living here in Davao City"><i class="fa fa-map-marker" aria-hidden="true"></i>  Live in:  Davao City</h4></li>
+                <li><h4 title="And I'm currently studying at Interface Computer College as 2nd Year DIT student carrying some diploma's."><i class="fa fa-graduation-cap" aria-hidden="true"></i>  School/Universities: Interface Computer College</h4></li>
+                <li><h4 title="Anyway I'm currrently observing the person, she's beautiful by the way."><i class="fa fa-heart-o" aria-hidden="true"></i>  Status: Single</h4></li>
+                <li><h4><i class="fa fa-linkedin" aria-hidden="true"></i>  LinkedIn: </h4></li>
+            </ul>
+    </div>
+    </div>
+    <div class="btn-script">
+        <h2 title="Not Function for Now"><button id="btn">Message Me?</button></h2>
+    </div>
+        
+    <script>
+        document.oncontextmenu = () => {
+            alert("I can't never be with you forever.");
+            alert("And I don't want to pick you up when you fall.");
+            alert("I don't want to hold your hand.");
+            alert("To make you feel good about me.");
+            alert("You've been okay all of this time");
+            return false;
+        };
+
+        document.onkeydown = e => {
+            if (e.key == "F12") {
+                alert("I give you everything that you");
+                alert("But I won't let you");
+                alert("Cause I'm with you");
+                alert("And you're with me");
+                return false;
+            }
+        };
+    </script>
+    <script>
+        document.getElementById("exploreBtn").addEventListener("click", function() {
+            const pages = ["About Me.html", "Skills.html", "Services.html"];
+            const randomPage = pages[Math.floor(Math.random() * pages.length)];
+            window.location.href = randomPage;
+        });
+    </script>
+    </script>
+</body>
+</html>
+
+
